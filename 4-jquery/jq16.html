@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>jQuery UI</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script src="jquery-ui/jquery-ui.js"></script>
+		<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+		
+	</head>
+	<body>
+		<div id="accordion">
+			<h3>Title</h3>
+			<div><p>Lorem ipsum</p></div>
+			<h3>Title</h3>
+			<div><p>Lorem ipsum</p></div>
+			<h3>Title</h3>
+			<div><p>Lorem ipsum</p></div><h3>Title</h3>
+			<div><p>Lorem ipsum</p></div>
+		</div>
+		
+		<ul id="sortable">
+			<li>Tomi</li>
+			<li>Bandi</li>
+			<li>James</li>
+		</ul>
+		<div id="droppable"></div>
+		
+		<script type="text/javascript">
+			$("#accordion").accordion();
+			$("#sortable").sortable();
+		</script>
+	</body>
+</html>

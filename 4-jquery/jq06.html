@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>jQuery</title>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <style type="text/css">
+            #circle {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+            }
+			#hiddenText{
+				display:none;
+			}
+			.square{
+				width: 150px;
+                height: 150px;
+                background-color: green;
+                margin: 10px;
+				
+			}
+        </style>
+    </head>
+    <body>
+		<div id="circle"></div>
+        <div class="square"></div>
+		<p id="text">some text</p>
+			<p id="hiddenText">hidden text</p>
+			<button id="fadeOut">Fade out text</button>
+			<button id="fadeIn">Fade in text</button>
+        <script type="text/javascript"> 
+            $("div").click(function() {
+				$("this").fadeOut("slow",function(){
+					alert("Fade out completed");
+				} ); //callback function
+			});
+			$("#fadeOut").click(function(){
+				$("#text").fadeOut();
+				
+			});
+			$("#fadeIn").click(function() {
+				$("#hiddenText").fadeIn();
+			});
+			
+			
+        </script>   
+    </body>
+</html>

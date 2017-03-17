@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title>Webpage with style</title>
+		<style type="text/css">
+			h2 {
+				color:red;
+				font-size:200%
+			}
+			
+			p {
+				color:yellow
+			}
+			
+			.red{
+				color:red
+			}
+			
+			.large{
+				font-size: 200%
+			}
+			
+			.clear-float{
+				clear: both
+			}
+			
+			#green{
+				color:#CEF6CE
+			}
+			
+			#first-section{
+				color:blue;
+				background-color: #000000;
+				width: 200px;
+				float: right
+			}
+			
+			#second-section{
+				background-color: #8AB4F7;
+				width: 200px;
+				float: left
+			}
+			
+			#pos1{
+				background-color:pink;
+				position:relative;
+				left: 250px;
+				top: -10px;
+				z-index:2
+			}
+			#pos2{
+				background-color:red;
+				position:relative;
+				left: 200px;
+				top: -150px;
+				z-index:1;
+				opacity:0.5
+			}
+			
+			#apos1{
+				background-color:pink;
+				position:absolute;
+				width: 300px
+			}
+			#apos2{
+				background-color:red;
+				position:absolute;
+			}
+			
+			#fpos1{
+				background-color:pink;
+				position:fixed;
+				width: 200px;
+				top:200px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<h1 style="color:green;">Inline CSS is cool</h1>
+		<p style="color:blue; font-size:200%">The quick brown fox jumped over the lazy dog.</p>
+		
+		<h1>Internal CSS is even cooler  </h1>
+		<p>The quick fox jumped over the lazy dog.</p>
+		
+		<h1 class="red">Internal CSS is even cooler  </h1>
+		<p class="red large">The quick fox jumped over the lazy dog.</p>
+		
+		<h1 id="green">Internal CSS is <span class="red">even</span> cooler  </h1>
+		<p class="red large">The quick fox jumped over the lazy dog.</p>
+		
+		<div id="first-section">
+			<h1>First div </h1>
+			
+			<p>...not everywhere!!!</p>
+			
+			<h1 id="green">Internal CSS is <span class="red">even</span> cooler  </h1>
+			<p class="red large">The quick fox jumped over the lazy dog.</p>
+		
+		</div>
+		<div id="second-section">
+			<h1>Second div </h1>
+			
+			<p>...not everywhere!!!</p>
+			
+			<h1 id="green">Internal CSS is <span class="red">even</span> cooler  </h1>
+			<p class="red large">The quick fox jumped over the lazy dog.</p>
+		
+		</div>
+		
+		<p>Where do you place me?</p>
+		
+		<div class="clear-float">
+			<h3>...and me?</h3>
+			<h3>...and me?</h3>
+			<h3>...and me?</h3>
+		</div>
+		
+		<h1>Let's do some relative positioning</h1>
+		<div id="pos1">
+			<h3>Huhu!</h3>
+			<h3>Huhu!</h3>
+			<h3>Huhu!</h3>
+		</div>
+		<div id="pos2">
+			<h3>Hiiii!</h3>
+			<h3>Hiiii!</h3>
+			<h3>Hiiii!</h3>
+		</div>
+		
+		<h1>Let's do some absolute positioning</h1>
+		<div id="apos1">
+			<h3>Huhu!</h3>
+			<h3>Huhu!</h3>
+			<h3>Huhu!</h3>
+		</div>
+		<div id="apos2">
+			<h3>Hiiii!</h3>
+			<h3>Hiiii!</h3>
+			<h3>Hiiii!</h3>
+		</div>
+		
+		<div id="fpos1">
+			<h3>Huhu!</h3>
+			<h3>Huhu!</h3>
+			<h3>Huhu!</h3>
+		</div>
+	</body>
+</html>
